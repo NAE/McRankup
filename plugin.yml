@@ -1,0 +1,20 @@
+name: McRankup
+main: com.gmail.mrphpfan.McRankup
+version: 1.0
+depend: [PermissionsEx, mcMMO, Vault, McCombatLevel]
+
+commands:
+  rankup:
+    description: Rankup to the next rank.
+    usage: /rankup [rank]
+    permission: McRankup.rankup
+    permission-message: You don't have McRankup.rankup
+permissions:
+  McRankup.*:
+    default: true
+    description: All rankup permissions.
+    children:
+      McRankup.rankup: true
+  McRankup.rankup:
+    description: Rankup to the next rank.
+    default: true
